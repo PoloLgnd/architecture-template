@@ -134,49 +134,49 @@ main {
 }
 
 .facebook {
-    background-image: url('/img/Facebook.svg');
+    background-image: url('/img/footer/Facebook.svg');
     width: 25px;      
     height: 25px;     
     background-size: 20px 20px;
     background-repeat: no-repeat;    
 }
 .twitter { 
-    background-image: url('/img/Twitter.svg');
+    background-image: url('/img/footer/Twitter.svg');
     width: 25px;      
     height: 25px;     
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
 .instagram { 
-    background-image: url('/img/Instagram.svg');
+    background-image: url('/img/footer/Instagram.svg');
     width: 25px;      
     height: 25px;     
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
 .pinterest { 
-    background-image: url('/img/Pinterest.svg');
+    background-image: url('/img/footer/Pinterest.svg');
     width: 25px;      
     height: 25px;     
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
 .google { 
-    background-image: url('/img/Google.svg');
+    background-image: url('/img/footer/Google.svg');
     width: 25px;      
     height: 25px;     
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
 .spotify { 
-    background-image: url('/img/Spotify.svg');
+    background-image: url('/img/footer/Spotify.svg');
     width: 25px;      
     height: 25px;     
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
 .telegram { 
-    background-image: url('/img/Tumblr.svg');
+    background-image: url('/img/footer/Tumblr.svg');
     width: 25px;      
     height: 25px;     
     background-size: 20px 20px;
