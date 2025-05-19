@@ -1,0 +1,133 @@
+.news-container {
+    display: flex;
+    gap: 17px;
+    padding: 40px 0;
+}
+
+.news-card {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.news-card-primary {
+    width: 780px;
+    height: 510px;
+    padding: 50px;
+}
+
+
+.secondary-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.news-card-secondary {
+    width: 374px;
+    height: 240px;
+    padding: 30px;
+}
+
+.news-number {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    color: rgba(255,255,255,0.15);
+    line-height: 0.8;
+}
+
+.news-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+}
+
+
+.news-button {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    outline: none;
+}
+
+.news-button:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+.news-button:active {
+    transform: translateY(0);
+}
+
+.news-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    z-index: 1;
+}
+
+
+.news-card-primary {
+    background-image: url('/img/main/news/2/actual.svg');
+}
+
+.news-card-secondary:nth-child(1) {
+    background-image: url('/img/main/news/2/Moda.svg');
+}
+
+.news-card-secondary:nth-child(2) {
+    background-image: url('/img/main/news/2/modern.svg');
+}
+
+.swiching-pags {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    gap: 14px;
+}
+
+.swiching-pag {
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.swiching-pagl:focus,
+.swiching-pag:active {
+    background-color: #333;
+}
