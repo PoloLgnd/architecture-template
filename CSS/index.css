@@ -60,7 +60,6 @@ main {
     color: #333;
     font-weight: 500;
     font-size: 16px;
-    transition: color 0.3s;
     position: relative;
     padding: 5px 0;
 }

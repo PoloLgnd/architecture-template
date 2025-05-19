@@ -1,7 +1,10 @@
 @import url(index.css);
 
-
 .main-news {
+
+}
+
+.news-container {
     display: flex;
     gap: 17px;
     padding: 40px 0;
@@ -22,7 +25,7 @@
 
 .news-card-primary {
     width: 780px;
-    height: 509px;
+    height: 510px;
     padding: 50px;
 }
 
@@ -34,7 +37,7 @@
 }
 
 .news-card-secondary {
-    width: 373px;
+    width: 374px;
     height: 240px;
     padding: 30px;
 }
@@ -112,8 +115,31 @@
     background-image: url('/img/main/news/2/modern.svg');
 }
 
+.swiching-pags {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    gap: 14px;
+}
+
+.swiching-pag {
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.swiching-pagl:focus,
+.swiching-pag:active {
+    background-color: #333;
+}
+
 .main-modern-buildings-name{
     display: inline-block;
+    margin-top: 120px ;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -121,7 +147,7 @@
     background: rgb(255, 0, 0);
     border: 2px solid white;
     border-radius: 50px;
-    padding: 12px 30px;
+    padding: 12px 30px ;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
@@ -132,7 +158,183 @@
 
 .main-modern-buildings {
     display: flex;
-    gap: 17px;
-    padding: 40px 0;
+    gap: 50px;
+    padding: 30px 0;
 }
 
+.modern-card {
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.modern-primary-card{
+    display: flex;
+    width: 404px;
+    height: 626px;
+}
+
+.modern-back-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 716px;
+}
+.modern-secondary-cards {
+    display: flex; 
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.modern-secondary-card {
+    display: flex;
+    width: 348px;
+    height: 292px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.modern-third-card {
+    display: flex;
+    width: 716px;
+    height: 246px;
+}
+
+.modern-primary-card {
+    background-image: url('/img/main/modern-bildings/primary-card.svg');
+}
+
+.modern-secondary-card:nth-child(1) {
+    background-image: url('/img/main/modern-bildings/secondary-card1.svg');
+}
+
+.modern-secondary-card:nth-child(2) {
+    background-image: url('/img/main/modern-bildings/secondary-card2.svg');
+}
+
+.modern-third-card {
+    background-image: url('/img/main/modern-bildings/third-card.svg');
+}
+
+.modern-primary-container,
+.modern-secondary-container,
+.modern-third-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modern-card-title {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    padding: 6px 0;
+}
+
+.modern-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e81a1a;
+    transition: width 0.3s;
+}
+
+.modern-card:hover + .modern-card-title::after,
+.modern-card-title:hover::after {
+    width: 170px;
+}
+
+.up_button {
+    position: relative;
+    right: 160px;
+    top: 550px;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    height: 40px;
+    align-items: center;
+
+}
+
+.up {
+    margin-right: 15px;
+}
+
+.arrow-container {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.arrow {
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+    left: -2px;
+}
+
+.arrow::before,
+.arrow::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    background-color: #333;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.arrow::before {
+    top: -2px;
+    transform: rotate(45deg);
+}
+
+.arrow::after {
+    bottom: -2px;
+    transform: rotate(-45deg);
+}
+
+.up_button:hover {
+    color: #e81a1a;
+}
+
+.up_button:hover .arrow-container {
+    border-color: #e81a1a;
+    transform: translateX(5px);
+}
+
+.up_button:hover .arrow,
+.up_button:hover .arrow::before,
+.up_button:hover .arrow::after {
+    background-color: #e81a1a;
+}
