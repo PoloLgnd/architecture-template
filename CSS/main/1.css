@@ -1,8 +1,49 @@
-@import url(/CSS/index.css);
-@import url(news-top-scroller.css);
-@import url(modern-buildings.css);
-@import url(mailing.css);
+@import url('/CSS/index.css');
+@import url('news-top-scroller.css');
+@import url('modern-buildings.css');
+@import url('mailing.css');
+@import url('old-buildings.css');
+@import url('news-buttom-scroller.css');
 
+.main-buildings-name{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 0, 0);
+    border-radius: 50px;
+    padding: 12px 30px ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    outline: none;
+    height: fit-content;
+}
+
+.swiching-pags {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    gap: 14px;
+}
+
+.swiching-pag {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.swiching-pag:focus,
+.swiching-pag:active {
+    background-color: #333;
+}
 
 .up_button {
     position: fixed;

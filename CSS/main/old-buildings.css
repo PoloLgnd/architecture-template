@@ -1,0 +1,100 @@
+.old-buildings{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.old-buildings-container{
+    display: flex;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+/* Общие стили */
+
+.old-card{
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+
+.old-card-title {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    padding: 6px 0;
+    padding-top: 20px;
+}
+
+.old-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e81a1a;
+    transition: width 0.3s;
+}
+
+.old-card-title:hover::after {
+    width: 100%;
+}
+
+#old-title1 {
+    width:fit-content;
+}
+
+#old-title2 {
+    width: fit-content;
+    margin-top: -14px;
+}
+
+/* --- */
+
+.old-primary-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.religion-buildings{
+    width: 580px;
+    height: 386px;
+    pointer-events: none;
+    background-image: url('/img/main/old-buildings/primary-card.svg');
+}
+
+.old-back-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.old-third-cards {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+
+.first-old-card {
+    width: 304px;
+    height: 200px;
+    background-image: url('/img/main/old-buildings/third-card.svg');
+}
+
+.second-old-card {
+    width: 304px;
+    height: 134px;
+    background-image: url('/img/main/old-buildings/third-card-2.svg');
+}
+
+.old-secondary-card {
+    width: 218px;
+    height: 346px;
+    background-image: url('/img/main/old-buildings/secondary-card.svg');
+}

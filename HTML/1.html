@@ -26,8 +26,15 @@
         </nav>
     </header>
     <main>
-        <section class="main-news">
-            <div class="news-container">
+        <a class="up_button">
+            <div class="up">Наверх</div>
+            <div class="arrow-container">
+                <div class="arrow"></div>
+            </div>
+        </a>
+
+        <section class="main-top-news">
+            <div class="top-news-container">
                 <div class="news-card news-card-primary">
                     <div class="news-number">02</div>
                     <h2 class="news-title">Самые актуальные архитектурные новости</h2>
@@ -46,7 +53,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="swiching-pags">
                 <button id="btn1" class="swiching-pag"></button>
                 <button id="btn1" class="swiching-pag"></button>
@@ -55,32 +61,91 @@
             </div>
         </section>
 
-        <div class="main-modern-buildings-name">Современные здания</div>
-
         <section class="main-modern-buildings">
-            <div class="modern-primary-container">
-                <div class="modern-card modern-primary-card"></div>
-                <a href="#" class="modern-card-title">Офисные здания</a>
-            </div>
-            
-            <div class="modern-back-cards">
-                <div class="modern-secondary-cards">
-                    <div class="modern-card modern-secondary-card"></div>
-                    <div class="modern-card modern-secondary-card"></div>
+            <div class="main-buildings-name">Современные здания</div>
+            <div class="main-modern-buildings-container">
+                <div class="modern-primary-container">
+                    <div class="modern-card modern-primary-card"></div>
+                    <a href="#" id="modern-title1" class="modern-card-title">Офисные здания</a>
                 </div>
+                
+                <div class="modern-back-cards">
+                    <div class="modern-secondary-cards">
+                        <div class="modern-card modern-secondary-card"></div>
+                        <div class="modern-card modern-secondary-card"></div>
+                    </div>
 
-                <div class="modern-third-cards">
-                    <div class="modern-card modern-third-card"></div>
-                    <a href="#" id="text-modern" class="modern-card-title">Жилые помещения</a>
+                    <div class="modern-third-cards">
+                        <div class="modern-card modern-third-card"></div>
+                        <a href="#" id="modern-title1" class="modern-card-title">Жилые помещения</a>
+                    </div>
                 </div>
             </div>
-            
-            <a class="up_button">
-                <div class="up">Наверх</div>
-                <div class="arrow-container">
-                    <div class="arrow"></div>
+        </section>
+
+        <section class="mailing-section">
+            <div class="mail-container">
+                <div class="mailing-title">Подпишитесь на нашу e-mail рассылку</div>
+                <div class="e-mail-container">
+                    <input type="email" class="input-email"></email>
+                    <a href="#" class="mailing-button">Подписаться</a>
                 </div>
-            </a>
+            </div>
+        </section>
+    
+        <section class="old-buildings">
+            <div class="main-buildings-name">Старинные здания</div>
+            <div class="old-buildings-container">
+                <div class="old-primary-container">
+                    <div class="old-card religion-buildings"></div>
+                    <a href="#" id="old-title1" class="old-card-title">Религиозные здания</a>
+                </div>
+                <div class="old-back-cards">
+                    <div class="old-third-cards">
+                        <div class="old-card first-old-card"></div>
+                        <div class="old-card second-old-card"></div>
+                        <a href="#" id="old-title2" class="old-card-title">Туристические здания</a>
+                    </div>
+                    <div class="old card old-secondary-card"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-buttom-news">
+            <div class="left-arrow">
+                <button class="arrow-btn prev-arrow" aria-label="Предыдущий">
+                    <span class="arrow-icon">‹</span>
+                </button>
+            </div>
+            <div class="main-buttom-container">
+                <div class="buttom-news-name">
+                    <div class="main-buildings-name">Архитектурные новости</div>
+                </div>
+                <div class="buttom-news-container">
+                    <div class="news-content-title-container">
+                        <div class="buttom-container">
+                            <div class="buttom-titls">
+                                <div class="news-content-title1">Самые необычные здания</div>
+                                <div class="news-content-title2">во всём мире</div>
+                            </div>
+                            <div class="button-container">
+                                <a href="#" class="news-button">СМОТРЕТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiching-pags1">
+                    <button id="btn1" class="swiching-pag1"></button>
+                    <button id="btn1" class="swiching-pag1"></button>
+                    <button id="btn1" class="swiching-pag1"></button>
+                    <button id="btn1" class="swiching-pag1"></button>
+                </div>
+            </div>
+            <div class="right-arrow">
+                <button class="arrow-btn next-arrow" aria-label="Следующий">
+                    <span class="arrow-icon">›</span>
+                </button>
+            </div>
         </section>
 
         <section class="mailing-section">
