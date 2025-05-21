@@ -85,9 +85,16 @@
     
     outline: none;
     transition: border-color 0.3s ease;
+
+    &::placeholder {
+        transition: color 0.5s ease;
+    }
 }
 
 .input-email:focus {
     border-color: #e81a1a;
+    &::placeholder {
+        color: #e81a1a;
+    }
 }
 

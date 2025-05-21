@@ -4,6 +4,7 @@
 @import url('mailing.css');
 @import url('old-buildings.css');
 @import url('news-buttom-scroller.css');
+@import url('/CSS/reset.css');
 
 .main-buildings-name{
     display: inline-block;
@@ -23,49 +24,41 @@
     height: fit-content;
 }
 
-.swiching-pags {
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-    gap: 14px;
-}
-
-.swiching-pag {
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.swiching-pag:focus,
-.swiching-pag:active {
-    background-color: #333;
-}
-
 .up_button {
     position: fixed;
-    left: 75%;
+    left: 80%;
     top: 550px;
     transform: rotate(-90deg);
     transform-origin: right top;
     display: flex;
     text-decoration: none;
-    color: #333;
+    color: #1A1A1A;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
     padding: 8px 15px;
     border-radius: 50px;
     transition: all 0.3s ease;
+    z-index: 1;
     height: 40px;
     align-items: center;
     pointer-events: all;
     opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.swiching-color-1 {
+    color: #1A1A1A;
+}
+
+.swiching-color-2 {
+    color: #e81a1a;
 }
 
 .up {
@@ -77,8 +70,8 @@
     height: 30px;
     margin-right: 10px;
     border-radius: 50%;
-    background-color: white;
-    border: 2px solid #333;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,8 +81,8 @@
 
 .arrow {
     width: 12px;
-    height: 2px;
-    background-color: #333;
+    height: 1px;
+    background-color: #1A1A1A;
     position: relative;
     left: -2px;
 }
@@ -99,8 +92,8 @@
     content: '';
     position: absolute;
     width: 6px;
-    height: 2px;
-    background-color: #333;
+    height: 1px;
+    background-color: #1A1A1A;
     right: 0;
     transition: all 0.3s ease;
 }

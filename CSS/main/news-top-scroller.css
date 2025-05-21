@@ -14,6 +14,7 @@
     background-size: cover;
     background-position: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-sizing: content-box;
 }
 
 
@@ -28,6 +29,20 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+}
+
+.news-card-primary .news-title {
+    font-weight: 400;
+    font-size: 36px;
+    max-width: 626px;
+    margin-bottom: 35px;
+}
+
+.news-card-secondary .news-title {
+    font-weight: 300;
+    font-size: 24px;
+    max-width: 244px;
+    margin-bottom: 30px;
 }
 
 .news-card-secondary {
@@ -50,7 +65,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 28px;
-    margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     position: relative;
     z-index: 2;
@@ -60,8 +74,8 @@
 .news-button {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
     color: white;
     background: rgba(0, 0, 0, 0.2);
     border: 2px solid white;
@@ -110,29 +124,6 @@
     background-image: url('/img/main/news/2/modern.svg');
 }
 
-.swiching-pags1 {
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-    gap: 14px;
-    margin-bottom: 100px;
-}
-
-.swiching-pag1 {
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.swiching-pag1:focus,
-.swiching-pag1:active {
-    background-color: #ffffff;
-}
-
 /* Кнопочки кружочки */
 
 .right-arrow,
@@ -175,4 +166,26 @@
 
 .arrow-btn:active {
   transform: scale(0.95);
+}
+
+.swiching-pags {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    gap: 14px;
+}
+
+.swiching-pag {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #4F4F4F;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.swiching-pag:focus,
+.swiching-pag:active {
+    background-color: #4F4F4F;
 }
