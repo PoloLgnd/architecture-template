@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     font-family: Montserrat;
     margin: 0;
     min-height: 100vh;
@@ -14,14 +15,14 @@ main {
 
 .container-width {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
 .header {
     flex-direction: column;
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -131,56 +132,61 @@ main {
 
 .social-link:hover {
     transform: scale(1.1) translateY(-4px);
-    
+
 }
 
 .facebook {
     background-image: url('/img/footer/Facebook.svg');
-    width: 26px;      
-    height: 26px;     
-    background-size: 20px 20px;
-    background-repeat: no-repeat;    
-}
-.twitter { 
-    background-image: url('/img/footer/Twitter.svg');
-    width: 26px;      
-    height: 26px;     
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-}
-.instagram { 
-    background-image: url('/img/footer/Instagram.svg');
-    width: 26px;      
-    height: 26px;     
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-}
-.pinterest { 
-    background-image: url('/img/footer/Pinterest.svg');
-    width: 26px;      
-    height: 26px;     
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-}
-.google { 
-    background-image: url('/img/footer/Google.svg');
-    width: 26px;      
-    height: 26px;     
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-}
-.spotify { 
-    background-image: url('/img/footer/Spotify.svg');
-    width: 26px;      
-    height: 26px;     
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-}
-.telegram { 
-    background-image: url('/img/footer/Tumblr.svg');
-    width: 26px;      
-    height: 26px;     
+    width: 26px;
+    height: 26px;
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
 
+.twitter {
+    background-image: url('/img/footer/Twitter.svg');
+    width: 26px;
+    height: 26px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.instagram {
+    background-image: url('/img/footer/Instagram.svg');
+    width: 26px;
+    height: 26px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.pinterest {
+    background-image: url('/img/footer/Pinterest.svg');
+    width: 26px;
+    height: 26px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.google {
+    background-image: url('/img/footer/Google.svg');
+    width: 26px;
+    height: 26px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.spotify {
+    background-image: url('/img/footer/Spotify.svg');
+    width: 26px;
+    height: 26px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.telegram {
+    background-image: url('/img/footer/Tumblr.svg');
+    width: 26px;
+    height: 26px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}

@@ -1,7 +1,35 @@
+.main-top-news {
+    position: relative;
+    width: 100%;
+    height: 490px;
+}
+
 .top-news-container {
     display: flex;
     gap: 17px;
-    padding: 40px 0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .6s, transform .8s;
+
+    &.prev,
+    &.next {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.prev {
+        transform: translateX(-50%);
+    }
+
+    &.next {
+        transform: translateX(50%);
+    }
 }
 
 .news-card {
@@ -13,14 +41,12 @@
     justify-content: flex-end;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-sizing: content-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
 .news-card-primary {
-    width: 780px;
-    height: 510px;
+    flex-grow: 1;
     padding: 50px;
 }
 
@@ -46,8 +72,8 @@
 }
 
 .news-card-secondary {
+    flex-grow: 1;
     width: 374px;
-    height: 240px;
     padding: 30px;
 }
 
@@ -57,7 +83,7 @@
     left: 50px;
     font-family: 'Abril Fatface', cursive;
     font-size: 100px;
-    color: rgba(255,255,255,0.15);
+    color: rgba(255, 255, 255, 0.15);
     line-height: 0.8;
 }
 
@@ -65,7 +91,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 28px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 2;
 }
@@ -92,7 +118,7 @@
 }
 
 .news-button:hover {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
 }
 
@@ -107,7 +133,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
     z-index: 1;
 }
 
@@ -134,45 +160,48 @@
 }
 
 .arrow-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.342);
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  padding: 0;
-  cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.342);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    cursor: pointer;
 }
 
 .arrow-icon {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight:normal;
-  line-height: 1;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
 }
 
 .arrow-btn:hover {
-  border-color: #e81a1a;
-  background-color: rgba(232, 26, 26, 0.1);
+    border-color: #e81a1a;
+    background-color: rgba(232, 26, 26, 0.1);
 }
 
 .arrow-btn:hover .arrow-icon {
-  color: #e81a1a;
+    color: #e81a1a;
 }
 
 .arrow-btn:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .swiching-pags {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
     display: flex;
-    margin: 10px;
     justify-content: center;
     gap: 14px;
+    transform: translate(-50%, 100%);
 }
 
 .swiching-pag {
@@ -182,10 +211,15 @@
     border-radius: 50%;
     border: 1px solid #4F4F4F;
     background-color: transparent;
+    transition: background-color .3s;
     cursor: pointer;
 }
 
-.swiching-pag:focus,
-.swiching-pag:active {
+.swiching-pag:focus-visible,
+.swiching-pag.active {
     background-color: #4F4F4F;
+}
+
+.swiching-pag.active {
+    pointer-events: none;
 }
