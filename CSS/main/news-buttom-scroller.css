@@ -20,10 +20,34 @@
     margin-bottom: 75px;
 }
 
-.main-buttom-container {
+/* .main-buttom-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+} */
+
+.buttom-slide {
+    top: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity .6s, transform .8s;
+
+    &.prev,
+    &.next {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.prev {
+        transform: translateX(-50%);
+    }
+
+    &.next {
+        transform: translateX(50%);
+    }
 }
 
 .buttom-news-container {
@@ -35,6 +59,9 @@
 .buttom-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .buttom-titls {
@@ -45,12 +72,15 @@
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     position: relative;
     z-index: 2;
-    justify-content: center;
-    flex-direction: column;
+    max-width: 650px;
+
 }
 
 .news-content-title1 {
     font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .news-content-title2 {
@@ -67,9 +97,10 @@
 }
 
 .swiching-pags1 {
+    position: absolute;
+    bottom: -40px;
+    left: 47%;
     display: flex;
-    margin: 10px;
-    justify-content: center;
     gap: 14px;
     margin-bottom: 100px;
 }
@@ -84,7 +115,66 @@
     cursor: pointer;
 }
 
-.swiching-pag1:focus,
-.swiching-pag1:active {
+.swiching-pag1:focus-visible,
+.swiching-pag1.active {
     background-color: #ffffff;
+}
+
+.swiching-pag1.active {
+    pointer-events: none;
+}
+
+.right-arrow,
+.left-arrow {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.arrow-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.342);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.arrow-btn:hover {
+    border-color: #e81a1a;
+    background-color: rgba(232, 26, 26, 0.1);
+}
+
+.arrow-btn:hover .arrow-icon {
+    color: #e81a1a;
+}
+
+.arrow-btn:active {
+    transform: scale(0.95);
 }
