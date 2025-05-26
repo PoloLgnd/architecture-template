@@ -1,0 +1,13 @@
+@import url('/CSS/reset.css');
+@import url('/CSS/index.css');
+@import url('/CSS/secind-news/secondary-news.css');
+
+.path {
+    display: flex;
+}
+
+.secondary-container-width {
+    width: 100%;
+    max-width: 952px;
+    margin: 0 auto;
+}

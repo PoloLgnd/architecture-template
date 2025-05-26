@@ -45,14 +45,14 @@ main {
 }
 
 .main-nav {
-    padding: 15px 0;
+    padding: 25px 0;
     background-color: #fff;
 }
 
 .nav-list {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -61,10 +61,10 @@ main {
 .nav-item a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     position: relative;
-    padding: 5px 0;
+    padding: 6px 0;
 }
 
 .nav-item a::after {
