@@ -1,4 +1,5 @@
-const SLIDES = document.querySelectorAll('.slide');
+(function() {
+    const SLIDES = document.querySelectorAll('.slide');
 const DOTS = document.querySelectorAll('.swiching-pag');
 const SLIDER = document.querySelector('.main-top-news');
 let active_slide = 0;
@@ -72,3 +73,4 @@ function setSliderTimeout() {
 		timer = setSliderInterval();
 	}, 500);
 }
+})();
