@@ -1,3 +1,17 @@
-.path {
-    display: flex;
+.secondary-container-width {
+    width: 100%;
+    max-width: 952px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+    margin-top: 20px;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 14px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    max-width: 480px;
 }

@@ -6,8 +6,10 @@
     display: flex;
 }
 
-.secondary-container-width {
-    width: 100%;
-    max-width: 952px;
-    margin: 0 auto;
+.text-path {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.5);
 }
+
