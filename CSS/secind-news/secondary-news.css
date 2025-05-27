@@ -35,3 +35,35 @@
     width: 952px;
     height: 100%;
 }
+
+/* Карточки */
+
+
+.building-dominion,
+.building-scale,
+.building-sidnay,
+.building-kubs,
+.building-flowers,
+.building-circle,
+.building-sin-city,
+.building-stairs,
+.building-bones {
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-card {
+    max-width: 358px;
+}
+
+.secondary-card {
+    max-width: 278px;
+}
+
+.primary-card:nth-child(1) {
+    
+}
+
+.secondary-card:nth-child(1) {
+    
+}
