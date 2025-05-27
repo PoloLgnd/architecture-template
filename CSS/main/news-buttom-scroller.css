@@ -20,20 +20,22 @@
     margin-bottom: 75px;
 }
 
-/* .main-buttom-container {
+.main-buttom-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-} */
+    width: 862px;
+    gap: 100%;
+}
 
 .buttom-slide {
+    position: absolute;
     top: 0;
-    left: 30%;
+    left: 0;
     width: 100%;
     height: 100%;
-    flex-direction: column;
-    justify-content: center;
     transition: opacity .6s, transform .8s;
+    /* Вынужденная мера для того, чтобы я мог поставить кнопочки на места */
+    pointer-events: none;
 
     &.prev,
     &.next {
@@ -52,8 +54,12 @@
 
 .buttom-news-container {
     display: flex;
-    justify-content: center;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    padding: 100px;
     width: 862px;
+    justify-content: center;
 }
 
 .buttom-container {
@@ -126,27 +132,27 @@
 
 .right-arrow,
 .left-arrow {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .right-arrow {
-    position: absolute;
-    top: 50%;
-    left: 80%;
+    position: relative;
+    top: 0;
+    right: 0;
 }
 
 .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 20%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .arrow-btn {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     background-color: rgba(0, 0, 0, 0.342);

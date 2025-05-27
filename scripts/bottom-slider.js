@@ -1,10 +1,9 @@
-
-
 (function() {
     const SLIDES = document.querySelectorAll('.buttom-slide');
 	const DOTS = document.querySelectorAll('.swiching-pag1');
 	const SLIDER = document.querySelectorAll('.main-buttom-news');
-
+	const ARROWS = document.querySelectorAll('.arrow');
+	let active_slide = 0;
 
 
 	[...DOTS].forEach((pag, index) => {
@@ -25,6 +24,10 @@
 		[...DOTS].forEach((pag, idx) => {
 			idx === active_slide ? pag.classList.add('active') : pag.classList.remove('active');
 		});
+	}
+
+	function clickArrows() {
+		
 	}
 
 	function changeSlide() {
