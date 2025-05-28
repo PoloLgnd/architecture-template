@@ -6,6 +6,7 @@
     margin-top: 20px;
 }
 
+
 .main-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -32,8 +33,12 @@
 }
 
 .content-container {
+    display: flex;
     width: 952px;
     height: 100%;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 60px;
 }
 
 /* Карточки */
@@ -50,20 +55,156 @@
 .building-bones {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.primary-card {
-    max-width: 358px;
+
+
+#one {
+    background-image: url('/img/arch-news/1/dominion.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 278px;
+    height: 420px;
 }
 
+#two {
+    background-image: url('/img/arch-news/1/scale.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 358px;
+    height: 490px;
+}
+
+#three {
+    background-image: url('/img/arch-news/1/sydnay.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 278px;
+    height: 420px;
+}
+
+#four {
+    background-image: url('/img/arch-news/2/kubs.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 278px;
+    height: 362px;
+}
+
+#five {
+    background-image: url('/img/arch-news/2/flowers.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 358px;
+    height: 324px;
+}
+
+#six {
+    background-image: url('/img/arch-news/2/circle.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 278px;
+    height: 362px;
+}
+
+#seven {
+    background-image: url('/img/arch-news/3/sin-city.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 278px;
+    height: 420px;
+}
+
+#eight {
+    background-image: url('/img/arch-news/3/stairs.svg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center; 
+    width: 358px;
+    height: 490px;
+}
+
+#nine {
+    background-image: url('/img/arch-news/3/bouns.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 278px;
+    height: 420px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 170%;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    max-width: 480px;
+    margin-bottom: 10px;
+}
+
+.title-after {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #D90000;
+    text-transform: uppercase;
+    max-width: 480px;
+    margin-bottom: 10px;
+}
+
+.switching-number-pages {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+/* Кнопка для карточек */
+.primary-card,
 .secondary-card {
-    max-width: 278px;
+    position: relative;
+    display: flex;
 }
 
-.primary-card:nth-child(1) {
+.button-card {
+    position: absolute;
+    bottom: 0;
     
+    display: flex; 
+    height: 46px;
+    width: 150px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #333;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;    
+
+    background-color: #fff;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
 }
 
-.secondary-card:nth-child(1) {
-    
+.button-card:hover {
+    color:#D90000;
+}
+
+.button-card:active {
+    transform: translateY(1px);
 }

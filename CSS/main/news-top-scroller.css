@@ -171,6 +171,7 @@
     background-color: transparent;
     transition: background-color .3s;
     cursor: pointer;
+    user-select: none;
 }
 
 .swiching-pag:focus-visible,

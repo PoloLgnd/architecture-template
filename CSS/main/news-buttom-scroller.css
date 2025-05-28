@@ -119,6 +119,7 @@
     border: 1px solid #ffffff;
     background: rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    user-select: none;
 }
 
 .swiching-pag1:focus-visible,
