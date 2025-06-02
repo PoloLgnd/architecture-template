@@ -131,27 +131,9 @@
     pointer-events: none;
 }
 
-.right-arrow,
-.left-arrow {
-    /* position: absolute; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.right-arrow {
-    position: relative;
-    top: 0;
-    right: 0;
-}
-
-.left-arrow {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
 .arrow-btn {
+    position: absolute;
+    top: 50%;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -164,6 +146,37 @@
 
     padding: 0;
     cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &.disabled {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.prev-arrow,
+.next-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prev-arrow {
+    left: 0;
+    transform: translate(-100%, -50%);
+
+    &:active {
+        transform: translate(-100%, -50%) scale(.95);
+    }
+}
+
+.next-arrow {
+    right: 0;
+    transform: translate(100%, -50%);
+
+    &:active {
+        transform: translate(100%, -50%) scale(.95);
+    }
 }
 
 .arrow-icon {
