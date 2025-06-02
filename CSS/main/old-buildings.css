@@ -70,7 +70,7 @@
     width: 580px;
     height: 386px;
     pointer-events: none;
-    background-image: url('/img/main/old-buildings/primary-card.svg');
+    background-image: url('/img/main/old-buildings/primary-card.webp');
 }
 
 .old-back-cards {
@@ -87,17 +87,17 @@
 .first-old-card {
     width: 304px;
     height: 200px;
-    background-image: url('/img/main/old-buildings/third-card.svg');
+    background-image: url('/img/main/old-buildings/third-card.webp');
 }
 
 .second-old-card {
     width: 304px;
     height: 134px;
-    background-image: url('/img/main/old-buildings/third-card-2.svg');
+    background-image: url('/img/main/old-buildings/third-card-2.webp');
 }
 
 .old-secondary-card {
     width: 218px;
     height: 346px;
-    background-image: url('/img/main/old-buildings/secondary-card.svg');
+    background-image: url('/img/main/old-buildings/secondary-card.webp');
 }
