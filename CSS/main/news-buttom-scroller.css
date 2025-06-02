@@ -16,11 +16,11 @@
 .buttom-news-name {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
     margin-bottom: 75px;
 }
 
 .main-buttom-container {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 862px;
@@ -34,8 +34,7 @@
     width: 100%;
     height: 100%;
     transition: opacity .6s, transform .8s;
-    /* Вынужденная мера для того, чтобы я мог поставить кнопочки на места */
-    pointer-events: none;
+    
 
     &.prev,
     &.next {
@@ -73,26 +72,23 @@
 .buttom-titls {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 60px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     position: relative;
     z-index: 2;
-    max-width: 650px;
+    width: 862px;
 
 }
 
 .news-content-title1 {
-    font-weight: 400;
+    font-weight: 300;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.news-content-title2 {
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
+.bbb {
+    font-weight: 500;
 }
 
 .button-container {
@@ -104,11 +100,10 @@
 
 .swiching-pags1 {
     position: absolute;
-    bottom: -40px;
-    left: 47%;
+    bottom: 100px;
+    justify-self: center;
     display: flex;
     gap: 14px;
-    margin-bottom: 100px;
 }
 
 .swiching-pag1 {
@@ -149,7 +144,7 @@
     transition: opacity 0.3s ease;
 
     &.disabled {
-        opacity: 0;
+        opacity: 0.80;
         pointer-events: none;
     }
 }
@@ -163,19 +158,19 @@
 
 .prev-arrow {
     left: 0;
-    transform: translate(-100%, -50%);
+    transform: translate(-400%, -50%);
 
     &:active {
-        transform: translate(-100%, -50%) scale(.95);
+        transform: translate(-400%, -50%) scale(.95);
     }
 }
 
 .next-arrow {
     right: 0;
-    transform: translate(100%, -50%);
+    transform: translate(400%, -50%);
 
     &:active {
-        transform: translate(100%, -50%) scale(.95);
+        transform: translate(400%, -50%) scale(.95);
     }
 }
 
@@ -193,8 +188,4 @@
 
 .arrow-btn:hover .arrow-icon {
     color: #e81a1a;
-}
-
-.arrow-btn:active {
-    transform: scale(0.95);
 }

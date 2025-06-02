@@ -2,8 +2,8 @@
     const SLIDES = document.querySelectorAll('.buttom-slide');
 	const DOTS = document.querySelectorAll('.swiching-pag1');
 	const SLIDER = document.querySelectorAll('.main-buttom-news');
-	const ARROW_LEFT = document.querySelectorAll('.prev-arrow');
-	const ARROW_RIGHT = document.querySelectorAll('.next-arrow')
+	const ARROW_LEFT = document.querySelector('.prev-arrow');
+	const ARROW_RIGHT = document.querySelector('.next-arrow')
 	let active_slide = 0;
 
 	ARROW_LEFT.addEventListener('click', () =>{
