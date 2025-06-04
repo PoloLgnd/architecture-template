@@ -1,40 +1,42 @@
 const FORM = document.querySelector('.mail-container');
 const INPUT = document.querySelector('.input-email');
 const FORM_BTN = document.querySelector('.mailing-button');
-const FORM_DATA = {};
-const number = '';
-const url = '';
+let form_data = {};
+const url = 'https://jsonplaceholder.typicode.com/posts';
 let sendingStatus = false;
 
 INPUT.addEventListener('input', function(evt) {
-    FORM_DATA[evt.target.type] = evt.target.value;
-
+    form_data[evt.target.type] = evt.target.value;
 })
 
 
 FORM_BTN.addEventListener('click', function() {
-    sendForm(url, 'POST');
-
-    if (sendingStatus) FORM.classList.add('success');
+    sendForm(url, 'POST', form_data).then(data => {
+        // sendingStatus = response.ok;
+        if (sendingStatus) FORM.classList.add('success');
     
-    setTimeout(() => {
-        if (FORM.classList.contains('succes'))FORM.classList.remove('succes');
-        if (FORM.classList.contains('error'))FORM.classList.remove('error');
-        sendingStatus = false;
-    }, 3000)
+        setTimeout(() => {
+            if (FORM.classList.contains('succes'))FORM.classList.remove('succes');
+            if (FORM.classList.contains('error'))FORM.classList.remove('error');
+            sendingStatus = false;
+        }, 3000)
+    });
+
+    INPUT.value = '';
+    form_data = {};
 })
 
 function sendForm(url, method, body = null) {
-    // const headers = {
-        
-    // }
+    const headers = {
+        'Content-type': 'application/json; charset=UTF-8',
+    }
 
     return fetch(url, {
         method: method,
         body: JSON.stringify(body),
         headers: headers,
     }).then(response => {
-        console.log(response);
         sendingStatus = response.ok;
+        return response.json();
     })
 }

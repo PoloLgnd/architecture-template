@@ -208,3 +208,112 @@ main {
     outline: none;
     height: fit-content;
 }
+
+@media (max-width: 520px) {
+    body {
+        
+    }
+
+    main {
+        
+    }
+
+    .container-width {
+        
+    }
+
+    .header {
+        
+    }
+
+    .header-top {
+       
+    }
+
+    .logo-link {
+        
+    }
+
+    .logo {
+        width: 280px;
+        height: 30px;
+    }
+
+    .main-nav {
+        
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-item a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .nav-item a::after {
+        
+    }
+
+    .nav-item a:hover::after {
+        
+    }
+
+    .footer {
+        
+    }
+
+    .footer-container {
+        
+    }
+
+    .footer-svg {
+        
+    }
+
+    .social-links {
+        
+    }
+
+    .social-link {
+        
+    }
+
+    .social-link:hover {
+        
+    }
+
+    .facebook {
+        
+    }
+
+    .twitter {
+        
+    }
+
+    .instagram {
+        
+    }
+
+    .pinterest {
+        
+    }
+
+    .google {
+        
+    }
+
+    .spotify {
+        
+    }
+
+    .telegram {
+        
+    }
+
+    .main-buildings-name {
+        
+    }
+}
