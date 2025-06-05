@@ -219,7 +219,7 @@ main {
     }
 
     .container-width {
-        
+        max-width: 300px;
     }
 
     .header {
@@ -246,6 +246,7 @@ main {
     .nav-list {
         flex-direction: column;
         gap: 16px;
+        
     }
 
     .nav-item a {

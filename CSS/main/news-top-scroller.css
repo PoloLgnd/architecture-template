@@ -182,3 +182,101 @@
 .swiching-pag.active {
     pointer-events: none;
 }
+
+@media (max-width: 520px) {
+    .main-top-news {
+        height: 390px;
+    }
+
+    .top-news-container {
+
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+    }
+
+    .news-card {
+
+    }
+
+
+    .news-card-primary {
+
+    }
+
+
+    .secondary-cards {
+
+    }
+
+    .news-card-primary .news-title {
+        font-weight: 400;
+        font-size: 36px;
+        max-width: 626px;
+        margin-bottom: 35px;
+    }
+
+    .news-card-secondary .news-title {
+        font-weight: 300;
+        font-size: 24px;
+        max-width: 244px;
+        margin-bottom: 30px;
+    }
+
+    .news-card-secondary {
+        flex-grow: 1;
+        width: 374px;
+        padding: 30px;
+    }
+
+    .news-number {
+        font-size: 100px;
+    }
+
+    .news-title {
+        font-size: 28px;
+    }
+
+
+    .news-button {
+        font-size: 16px;
+    }
+
+    .news-button:hover {
+
+    }
+
+    .news-button:active {
+
+    }
+
+    .news-card::before {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .news-card-primary {
+
+    }
+
+    .news-card-secondary:nth-child(1) {
+
+    }
+
+    .news-card-secondary:nth-child(2) {
+    }
+
+    /* Кнопочки кружочки */
+
+    .swiching-pags {
+       
+    }
+
+    .swiching-pag {
+        width: 14px;
+        height: 14px;
+    }
+}
