@@ -83,13 +83,10 @@
 }
 
 .modern-card-title {
-    text-decoration: none;
-    color: #000000;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    position: relative;
     padding: 6px 0;
 }
 
@@ -116,4 +113,66 @@
     width: 100%;
 }
 
+@media (max-width: 1024px) {
+    .main-modern-buildings {
 
+    }
+
+    .main-modern-buildings-container {
+        gap: 30px;
+    }
+
+    .modern-card {
+
+    }
+
+    .modern-primary-card{
+        width: 302px;
+    }   
+
+    .modern-back-cards {
+        width: 568px;
+    }
+
+    .modern-third-card {
+        width: 568px;
+    }
+
+    .modern-primary-card {
+
+    }
+
+    .modern-secondary-card:nth-child(1) {
+
+    }
+
+    .modern-secondary-card:nth-child(2) {
+
+    }
+
+    .modern-primary-container,
+    .modern-secondary-container,
+    .modern-third-container {
+
+    }
+
+    .modern-card-title {
+
+    }
+
+    .modern-card-title::after {
+
+    }
+
+    #modern-title1 {
+
+    }
+
+    #modern-title2 {
+
+    }
+
+    .modern-card-title:hover::after {
+        width: 100%;
+    }
+}
