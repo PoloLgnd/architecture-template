@@ -9,6 +9,12 @@ window.addEventListener('scroll', function() {
     } else {
         UP_BTN.classList.add('hidden');
     }
+
+    if (window.scrollY > 700) {
+      UP_BTN.style.fill = '#333'; // Тёмный (начальный)
+    } else {
+      UP_BTN.style.fill = '#ff5722'; // Оранжевый (или любой другой)
+    }
     // if (window.scrollY >= 2903 && window.scrollY <= 3521) {
     //     UP_BTN.classList.add('swiching-color-1');
     //     UP_BTN.classList.remove('swiching-color-2');

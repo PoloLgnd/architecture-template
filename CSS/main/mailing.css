@@ -143,3 +143,44 @@
         padding: 0 15px;
     }
 }
+
+@media (max-width: 768px) {
+    .mailing-section {
+        height: 302px;
+    }
+
+    .mail-container {
+        gap: 30px;
+    }
+
+    .mailing-title {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .e-mail-container {
+        width: 500px;
+        gap: 10px;
+    }
+
+    .mailing-button {
+        width: 150px;
+        height: 50px;
+
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .input-email {
+        width: 300px;
+        height: 50px;
+        padding: 0 15px;
+        
+        font-weight: 600;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+}

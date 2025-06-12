@@ -10,8 +10,8 @@
 
 .up_button {
     position: fixed;
-    left: 80%;
-    top: 550px;
+    right: 6%;
+    top: 60%;
     transform: rotate(-90deg);
     transform-origin: right top;
     display: flex;
@@ -105,4 +105,36 @@
 .up_button:hover .arrow::before,
 .up_button:hover .arrow::after {
     background-color: #e81a1a;
+}
+
+/* .up_button,
+.arrow {
+    background-color: #fff;
+} Это для перекрасса на нижней ленте новостей*/ 
+
+@media (max-width: 768px) {
+    .up_button {
+        right: 7%;
+        top: 60%;
+        font-weight: 500;
+        font-size: 12px;
+        padding: 8px 15px;
+        border-radius: 50px;
+        height: 40px;
+    }
+
+    .arrow-container {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .arrow {
+        width: 12px;
+        height: 1px;
+        background-color: #1A1A1A;
+        position: relative;
+        left: -2px;
+    }
 }

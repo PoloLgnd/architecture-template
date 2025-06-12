@@ -69,10 +69,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 74px;
+    height: 74px;
     background-color: #1a1a1a;
-    font-size: 1.6s;
+    font-size: 26px;
     line-height: 1;
     color: #fff;
     opacity: 0;
@@ -113,7 +113,7 @@
 
 @media (max-width: 768px) {
     .header {
-        height: 75px;
+        height: 74px;
     }
     
     .logo {
@@ -122,10 +122,12 @@
     }
 
     .main-nav {
-        &hidden {
+        opacity: 0;
+        pointer-events: none;
+        /* &hidden {
             opacity: 0;
             pointer-events: none;
-        }
+        } */
     }
 
     .nav-list {

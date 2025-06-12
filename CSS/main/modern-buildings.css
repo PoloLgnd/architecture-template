@@ -9,6 +9,7 @@
     display: flex;
     gap: 50px;
     padding: 30px 0;
+    overflow-x: scroll;
 }
 
 .modern-card {
@@ -158,6 +159,80 @@
 
     .modern-card-title {
 
+    }
+
+    .modern-card-title::after {
+
+    }
+
+    #modern-title1 {
+
+    }
+
+    #modern-title2 {
+
+    }
+
+    .modern-card-title:hover::after {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-modern-buildings {
+
+    }
+
+    .main-modern-buildings-container {
+        gap: 20px;
+    }
+
+    .modern-card {
+
+    }
+
+    .modern-primary-card{
+        width: 282px;
+        height: 500px;
+    }   
+
+    .modern-back-cards {
+        width: 518px;
+        height: 600px;
+    }
+
+    .modern-third-card {
+        width: 518px;
+        height: 200px;
+    }
+
+    .modern-primary-card {
+
+    }
+
+    .modern-secondary-cards {
+        height: 230px;
+    }
+
+    .modern-secondary-card:nth-child(1) {
+        height: 230px;
+    }
+
+    .modern-secondary-card:nth-child(2) {
+        height: 230px;
+    }
+
+    .modern-primary-container,
+    .modern-secondary-container,
+    .modern-third-container {
+
+    }
+
+    .modern-card-title {
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 4px 0;
     }
 
     .modern-card-title::after {
