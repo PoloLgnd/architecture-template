@@ -278,8 +278,12 @@
 }
 
 @media (max-width: 768px) {
+    .main-top-news {
+        height: 400px;
+    }
+
     .top-news-container {
-        
+        gap: 15px;
     }
 
     .slide {
@@ -294,11 +298,12 @@
 
     .news-card-primary {
         width: 200px;
+        height: 400px;
     }
 
 
     .secondary-cards {
-        width: 120px;        
+        height: 400px;
     }
 
     .news-card-primary .news-title {
@@ -306,6 +311,11 @@
         font-size: 30px;
         max-width: 626px;
         margin-bottom: 35px;
+    }
+
+    .news-card-primary {
+        flex-grow: 0;
+        width: 350px;
     }
 
     .news-card-secondary .news-title {
@@ -317,7 +327,7 @@
 
     .news-card-secondary {
         flex-grow: 1;
-        width: 374px;
+        width: 274px;
         padding: 30px;
     }
 
