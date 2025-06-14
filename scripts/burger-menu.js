@@ -1,8 +1,9 @@
 const MENU_BTN = document.querySelector('.btn-menu_mobile');
 const MENU_MOBILE = document.querySelector('.menu-mobile');
-const MAIN_CONTENT = document.querySelector('main');
+const BODY = document.body;
+let scrollPosition = 0;
 
 MENU_BTN.addEventListener('click', () => {
     MENU_MOBILE.classList.toggle('hidden');
-    MAIN_CONTENT.classList.toggle('hiddeni');
-})
+    MAIN_CONTENT.classList.toggle('stop-scrolling');
+});

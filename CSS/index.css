@@ -9,6 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    
+    &stop-scrolling {
+        opacity: 0.5;
+        pointer-events: none;
+        overflow-y: hidden;
+    }
 }
 
 main {
@@ -19,7 +25,7 @@ main {
     &hiddeni {
         opacity: 0.5;
         pointer-events: none;
-        background-color: rgba(0, 0, 0, 0.434);
+        overflow-y: hidden;
     }
 }
 
