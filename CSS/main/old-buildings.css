@@ -251,3 +251,78 @@
         height: 306px;
     }
 }
+
+@media (max-width: 425px) {
+    .old-buildings{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .old-buildings-container{
+        gap: 24px;
+        padding: 20px 0;
+        overflow-x: scroll;
+    }
+
+    /* Общие стили */
+
+    .old-card{
+    }
+
+    .old-card-title {
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 4px 0;
+        padding-top: 20px;
+    }
+
+    .old-card-title::after {
+        height: 2px;
+        transition: width 0.3s;
+    }
+
+    .old-card-title:hover::after {
+        width: 100%;
+    }
+
+    #old-title1 {
+        width:fit-content;
+    }
+
+    #old-title2 {
+        width: fit-content;
+        margin-top: -14px;
+    }
+
+    /* --- */
+
+    .religion-buildings{
+        width: 220px;
+        height: 256px;
+    }
+
+    .old-back-cards {
+        gap: 12px;
+    }
+
+    .old-third-cards {
+        gap: 14px;
+        width: 204px;
+    }
+
+    .first-old-card {
+        width: 204px;
+        height: 106px;
+    }
+
+    .second-old-card {
+        width: 204px;
+        height: 106px;
+    }
+
+    .old-secondary-card {
+        width: 188px;
+        height: 256px;
+    }
+}
