@@ -2,6 +2,7 @@
 @import url('/CSS/index.css');
 @import url('/CSS/secind-news/secondary-news.css');
 @import url('/CSS/main/mailing.css');
+@import url('/CSS/secind-news/switching-number-pages.css');
 
 .path {
     display: flex;
