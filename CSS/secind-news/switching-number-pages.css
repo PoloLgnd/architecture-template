@@ -23,13 +23,13 @@
     z-index: 11;
     
 
-    &lefti {
-        transform: translateX(-100%) translateY(-100%);
+    &.lefti {
+        transform: translateX(-1000%); 
         /* transition: all 0.3s ease; */
     }
 
-    &righti {
-        transform: translateX(100%) translateY(100%);
+    &.righti {
+        transform: translateX(100%);
         /* transition: all 0.3s ease; */
     }
 }

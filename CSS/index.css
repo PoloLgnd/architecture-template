@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     width: 100%;
     
-    &stop-scrolling {
+    &.stop-scrolling {
         opacity: 0.5;
         pointer-events: none;
         overflow-y: hidden;
@@ -22,7 +22,7 @@ main {
     flex: 1;
     box-sizing: border-box;
 
-    &hiddeni {
+    &.hiddeni {
         opacity: 0.5;
         pointer-events: none;
         overflow-y: hidden;
