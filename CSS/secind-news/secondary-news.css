@@ -169,10 +169,12 @@
 .secondary-card {
     position: relative;
     display: flex;
+    overflow: hidden;
 }
 
 .button-card {
     position: absolute;
+    left: -150px;
     bottom: 0;
     
     display: flex; 
@@ -192,11 +194,12 @@
 
     cursor: pointer;
     transition: all 0.3s ease;
-    
-    &hidden {
-        transform: translateX(-100%) translateY(-100%) ;
-        transition: all 0.3s ease;
-    }
+    z-index: 2;
+}
+
+.secondary-card:hover .button-card,
+.primary-card:hover .button-card {
+    left: 0px;
 }
 
 .button-card:hover {
