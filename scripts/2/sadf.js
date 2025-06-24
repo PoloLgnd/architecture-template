@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pagesWrapper = document.querySelector('.pages-wrapper');
     const newsPages = document.querySelectorAll('.news-page');
     const newsSlider = document.querySelector('.news-slider');
-    let currentPage = 1;
+    let currentPage = 4;
     const totalPages = newsPages.length;
     
     // Инициализация

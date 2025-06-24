@@ -6,6 +6,19 @@
     margin-top: 20px;
 }
 
+.secind-news-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 1650px; /* Фиксированная высота для анимации */
+}
+
+
+.news-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 .main-title {
     font-family: 'Montserrat', sans-serif;
