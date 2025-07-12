@@ -12,6 +12,7 @@
     position: fixed;
     right: 6%;
     top: 60%;
+    height: 40px;
     transform: rotate(-90deg);
     transform-origin: right top;
     display: flex;
@@ -26,7 +27,6 @@
     border-radius: 50px;
     transition: all 0.3s ease;
     z-index: 1;
-    height: 40px;
     align-items: center;
     pointer-events: all;
     opacity: 1;
