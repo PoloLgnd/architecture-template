@@ -1,0 +1,50 @@
+.text-bottom {
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    &::after {
+        content: "С этим читают";
+    }
+}
+
+.meta-icon2 {
+  width: 146px;
+  height: 132px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#popular-building-icon {
+  background-image: url('/img/dominion-page/bottom-links/first-bottom.webp');
+}
+
+#most-curved-building-icon {
+  background-image: url('/img/dominion-page/bottom-links/second-bottom.webp');
+}
+
+#glass-revolution-icon {
+  background-image: url('/img/dominion-page/bottom-links/third-bottom.webp');
+}
+
+/* Текст в столбик */
+.meta-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.meta-title {
+  font-size: 20px;
+  color: black;
+}
+
+.meta-subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+}

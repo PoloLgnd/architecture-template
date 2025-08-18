@@ -1,7 +1,6 @@
 .main-modern-buildings-container {
     display: flex;
     gap: 20px;
-    padding: 30px 0;
 }
 
 .modern-card {
@@ -110,3 +109,29 @@
     width: 100%;
 }
 
+.med-text {
+    width: 120px;
+    position: relative; /* Добавляем относительное позиционирование */
+    display: inline-block; /* Ограничиваем ширину по содержимому */
+    font-size: 14px;
+    line-height: 170%;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.50);
+    padding-bottom: 2px; /* Добавляем отступ для подчеркивания */
+}
+
+.med-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e81a1a;
+    transition: width 0.3s;
+}
+
+.med-text:hover::after {
+    width: 100%; /* Теперь 100% от ширины самого элемента */
+}

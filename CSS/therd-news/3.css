@@ -3,6 +3,7 @@
 @import url('/CSS/therd-news/info-about-riding.css');
 @import url('/CSS/therd-news/text.css');
 @import url('/CSS/therd-news/buildings-cards.css');
+@import url('/CSS/therd-news/botom-links.css');
 
 .path {
     display: flex;
