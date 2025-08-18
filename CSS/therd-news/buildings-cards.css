@@ -1,0 +1,112 @@
+.main-modern-buildings-container {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.modern-card {
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.modern-primary-card{
+    display: flex;
+    width: 322px;
+    height: 460px;
+    pointer-events: none;
+}
+
+.modern-back-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 716px;
+}
+.modern-secondary-cards {
+    display: flex; 
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.modern-secondary-card {
+    display: flex;
+    width: 348px;
+    height: 292px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.modern-third-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modern-third-card {
+    display: flex;
+    width: 716px;
+    height: 246px;
+    pointer-events: none;
+    background-image: url('/img/dominion-page/buildings-cards/third-card.webp');
+}
+
+.modern-primary-card {
+    background-image: url('/img/dominion-page/buildings-cards/first-card.webp');
+}
+
+.modern-secondary-card:nth-child(1) {
+    background-image: url('/img/dominion-page/buildings-cards/secondary-card1.webp');
+}
+
+.modern-secondary-card:nth-child(2) {
+    background-image: url('/img/dominion-page/buildings-cards/secondary-card2.webp');
+}
+
+.modern-primary-container,
+.modern-secondary-container,
+.modern-third-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modern-card-title {
+    position: relative; /* Добавляем это */
+    max-width: 322px;
+    display: inline-block; /* Чтобы ширина соответствовала содержимому */
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 170%;
+    text-transform: uppercase;
+    padding: 6px 0;
+}
+
+.modern-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e81a1a;
+    transition: width 0.3s;
+}
+
+#modern-title1 {
+    width:fit-content;
+}
+
+#modern-title2 {
+    width:fit-content;
+}
+
+.modern-card-title:hover::after {
+    width: 100%;
+}
+

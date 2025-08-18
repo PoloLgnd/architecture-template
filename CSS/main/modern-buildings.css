@@ -83,6 +83,8 @@
 }
 
 .modern-card-title {
+    position: relative; /* Добавляем это */
+    display: inline-block; /* Чтобы ширина соответствовала содержимому */
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 2px;

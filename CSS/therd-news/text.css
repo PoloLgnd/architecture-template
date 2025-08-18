@@ -1,0 +1,47 @@
+.bold-text,
+.medium-text {
+    display: flex;
+    font-size: 18px;
+    line-height: 170%;
+}
+.bold-text{
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.medium-text {
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#text3 {
+    margin-bottom: 25px;
+}
+
+.med-text {
+    display: flex;
+    font-size: 14px;
+    line-height: 170%;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.med-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e81a1a;
+    transition: width 0.3s;
+}
+
+#med-text1 {
+    width:fit-content;
+}
+
+.med-text:hover::after {
+    width: 100%;
+}

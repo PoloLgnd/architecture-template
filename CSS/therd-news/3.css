@@ -1,5 +1,8 @@
 @import url('/CSS/reset.css');
 @import url('/CSS/index.css');
+@import url('/CSS/therd-news/info-about-riding.css');
+@import url('/CSS/therd-news/text.css');
+@import url('/CSS/therd-news/buildings-cards.css');
 
 .path {
     display: flex;
@@ -10,6 +13,27 @@
 .text-path {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
     color: rgba(51, 51, 51, 0.5);
 }
+
+.info-about-riding {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+
+.dominion-main-info {
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.palochka {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
