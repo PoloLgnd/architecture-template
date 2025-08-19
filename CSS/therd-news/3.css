@@ -4,6 +4,7 @@
 @import url('/CSS/therd-news/text.css');
 @import url('/CSS/therd-news/buildings-cards.css');
 @import url('/CSS/therd-news/botom-links.css');
+@import url('/CSS/therd-news/arrow-ups.css');
 
 .path {
     display: flex;

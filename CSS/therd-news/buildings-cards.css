@@ -15,8 +15,8 @@
 
 .modern-primary-card{
     display: flex;
-    width: 322px;
-    height: 460px;
+    width: 372px;
+    height: 510px;
     pointer-events: none;
 }
 
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 716px;
+    width: 766px;
 }
 .modern-secondary-cards {
     display: flex; 
@@ -34,8 +34,8 @@
 
 .modern-secondary-card {
     display: flex;
-    width: 348px;
-    height: 292px;
+    width: 398px;
+    height: 342px;
     gap: 20px;
     justify-content: space-between;
 }
@@ -48,8 +48,8 @@
 
 .modern-third-card {
     display: flex;
-    width: 716px;
-    height: 246px;
+    width: 766px;
+    height: 266px;
     pointer-events: none;
     background-image: url('/img/dominion-page/buildings-cards/third-card.webp');
 }

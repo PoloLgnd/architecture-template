@@ -16,7 +16,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transition: transform 0.3s ease; /* Плавная анимация для иконки */
+  transition: transform 0.3s ease;
 }
 
 #popular-building-icon {
@@ -32,44 +32,44 @@
 }
 
 /* Текст в столбик */
-.meta-titles {
+.meta-titless {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.meta-title {
+.meta-titlee {
   font-size: 20px;
   color: black;
-  transition: all 0.3s ease; /* Плавный переход для текста */
+  transition: all 0.3s ease;
 }
 
-.meta-subtitle {
+.meta-subtitlee {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: black;
-  transition: all 0.3s ease; /* Плавный переход для подзаголовка */
+  transition: all 0.3s ease;
 }
 
 .meta-groups {
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: transform 0.3s ease; /* Плавное движение вверх */
-    cursor: pointer; /* Меняем курсор при наведении */
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 /* Эффекты при наведении на всю группу */
 .meta-groups:hover {
-  transform: translateY(-5px); /* Двигаем вверх на 5px */
+  transform: translateY(-5px);
 }
 
-.meta-groups:hover .meta-title {
-  color: #e81a1a; /* Меняем цвет заголовка */
+.meta-groups:hover .meta-titlee {
+  color: #e81a1a;
 }
 
-.meta-groups:hover .meta-subtitle {
-  color: #e81a1a; /* Меняем цвет подзаголовка */
+.meta-groups:hover .meta-subtitlee {
+  color: #e81a1a;
 }
 

@@ -51,11 +51,36 @@
 }
 
 .meta-title {
+  font-weight: 600;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease; /* Плавный переход для текста */
 }
 
 .meta-subtitle {
+  font-weight: 600;
   font-size: 14px;
-  color: #D90000;
+  color: #e81a1a;
+  transition: all 0.3s ease; /* Плавный переход для подзаголовка */
+}
+
+.meta-groups {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease; /* Плавное движение вверх */
+    cursor: pointer; /* Меняем курсор при наведении */
+}
+
+/* Эффекты при наведении на всю группу */
+.meta-groups:hover {
+  transform: translateY(-5px); /* Двигаем вверх на 5px */
+}
+
+.meta-groups:hover .meta-title {
+  color: #e81a1a; /* Меняем цвет заголовка */
+}
+
+.meta-groups:hover .meta-subtitle {
+  color: #e81a1a; /* Меняем цвет подзаголовка */
 }
