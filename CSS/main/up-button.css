@@ -44,7 +44,7 @@
     height: 30px;
     margin-right: 10px;
     border-radius: 50%;
-    background-color: #1A1A1A;
+    background-color: transparent;
     border: 1px solid #1A1A1A;
     display: flex;
     justify-content: center;
@@ -56,7 +56,7 @@
 .arrow {
     width: 12px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #1A1A1A;
     position: relative;
     left: -2px;
 }
@@ -67,7 +67,7 @@
     position: absolute;
     width: 6px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #1A1A1A;
     right: 0;
     transition: all 0.3s ease;
 }
@@ -88,8 +88,7 @@
 
 .up_button:hover .arrow-container {
     border-color: #e81a1a;
-    background-color: #ffffff00;
-    transform: translateX(6px);
+    transform: translateX(5px);
 }
 
 .up_button:hover .arrow,
@@ -98,9 +97,61 @@
     background-color: #e81a1a;
 }
 
+/* .up_button,
+.arrow {
+    background-color: #fff;
+} Это для перекрасса на нижней ленте новостей*/ 
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .up_button {
-        right: 6%;
+        right: 7%;
+        top: 60%;
+        font-weight: 500;
+        font-size: 12px;
+        padding: 8px 15px;
+        border-radius: 50px;
+        height: 40px;
+    }
+
+    .arrow-container {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .arrow {
+        width: 12px;
+        height: 1px;
+        background-color: #1A1A1A;
+        position: relative;
+        left: -2px;
+    }
+}
+
+@media (max-width: 425px) {
+    .up_button {
+        right: 12%;
+        top: 60%;
+        font-weight: 500;
+        font-size: 10px;
+        padding: 8px 15px;
+        border-radius: 50px;
+        height: 40px;
+    }
+
+    .arrow-container {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .arrow {
+        width: 12px;
+        height: 1px;
+        background-color: #1A1A1A;
+        position: relative;
+        left: -2px;
     }
 }

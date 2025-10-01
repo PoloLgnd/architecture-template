@@ -3,6 +3,7 @@
 @import url('/CSS/secind-news/secondary-news.css');
 @import url('/CSS/main/mailing.css');
 @import url('/CSS/secind-news/switching-number-pages.css');
+@import url('/CSS/main/up-button.css');
 
 .path {
     display: flex;
