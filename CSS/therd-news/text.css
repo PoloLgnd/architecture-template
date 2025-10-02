@@ -21,3 +21,11 @@
 #text4 {
     margin-bottom: 120px;
 }
+
+@media (max-width: 1024px) {
+    .bold-text,
+    .medium-text {
+        font-size: 16px;
+        line-height: 160%;
+    }
+}

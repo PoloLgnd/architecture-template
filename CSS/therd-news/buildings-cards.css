@@ -71,7 +71,7 @@
 .modern-third-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
 }
 
 .modern-card-title {
@@ -134,4 +134,118 @@
 
 .med-text:hover::after {
     width: 100%; /* Теперь 100% от ширины самого элемента */
+}
+
+@media (max-width: 1024px) {
+    .main-modern-buildings-container {
+        gap: 18px;
+    }
+
+    .modern-card {
+        box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+/* --- */
+    .modern-primary-card{
+        width: 266px;
+        height: 390px;
+    }
+
+    .modern-back-cards {
+        gap: 20px;
+        width: 572px;
+    }
+    .modern-secondary-cards {
+        gap: 16px;
+    }
+
+    .modern-secondary-card {
+        width: 278px;
+        height: 262px;
+        gap: 20px;
+    }
+
+    .modern-third-cards {
+        gap: 20px;
+    }
+
+    .modern-third-card {
+        width: 572px;
+        height: 266px;
+    }
+
+    .modern-primary-container,
+    .modern-secondary-container,
+    .modern-third-container {
+        gap: 16px;
+    }
+
+    .modern-card-title {
+        max-width: 322px;
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    .med-text {
+        width: 120px;
+        font-size: 14px;
+        line-height: 170%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-modern-buildings-container {
+        gap: 18px;
+    }
+
+    .modern-card {
+        box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+/* --- */
+    .modern-primary-card{
+        width: 194px;
+        height: 320px;
+    }
+
+    .modern-back-cards {
+        gap: 22px;
+        width: 388px;
+    }
+    .modern-secondary-cards {
+        gap: 16px;
+    }
+
+    .modern-secondary-card {
+        width: 194px;
+        height: 262px;
+        gap: 20px;
+    }
+
+    .modern-third-cards {
+        gap: 20px;
+    }
+
+    .modern-third-card {
+        width: 388px;
+        height: 206px;
+    }
+
+    .modern-primary-container,
+    .modern-secondary-container,
+    .modern-third-container {
+        gap: 16px;
+    }
+
+    .modern-card-title {
+        max-width: 322px;
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    .med-text {
+        width: 120px;
+        font-size: 14px;
+        line-height: 170%;
+        margin-bottom: 40px;
+    }
 }

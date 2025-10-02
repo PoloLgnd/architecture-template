@@ -74,7 +74,7 @@
 
 /* Эффекты при наведении на всю группу */
 .meta-groups:hover {
-  transform: translateY(-5px); /* Двигаем вверх на 5px */
+  transform: translateY(-6px); /* Двигаем вверх на 5px */
 }
 
 .meta-groups:hover .meta-title {
@@ -83,4 +83,27 @@
 
 .meta-groups:hover .meta-subtitle {
   color: #e81a1a; /* Меняем цвет подзаголовка */
+}
+
+@media (max-width: 1024px) {
+    .text {
+        font-size: 14px;
+    }
+
+    .meta-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .meta-title {
+        font-size: 12px;
+    }
+
+    .meta-subtitle {
+        font-size: 12px;
+    }
+
+    .meta-groups {
+        gap: 8px;
+    }
 }

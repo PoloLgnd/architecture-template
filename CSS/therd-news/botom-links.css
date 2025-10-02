@@ -62,7 +62,7 @@
 
 /* Эффекты при наведении на всю группу */
 .meta-groups:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .meta-groups:hover .meta-titlee {
@@ -73,3 +73,25 @@
   color: #e81a1a;
 }
 
+@media (max-width: 1024px) {
+  .meta-icon2 {
+    width: 126px;
+    height: 132px;
+  }
+  .meta-titless {
+    gap: 16px;
+  }
+
+  .meta-titlee {
+    font-size: 14px;
+  }
+
+  .meta-subtitlee {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .meta-groups {
+      gap: 6px;
+  }
+}
