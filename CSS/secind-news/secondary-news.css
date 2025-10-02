@@ -1,10 +1,12 @@
-.secondary-container-width {
+/* .secondary-container-width {
     width: 100%;
     max-width: 952px;
     margin: 0 auto;
     margin-bottom: 46px;
     margin-top: 20px;
-}
+} */
+
+/* Я перетащил на индекс css */
 
 .secind-news-container {
     position: relative;

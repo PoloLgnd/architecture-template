@@ -35,6 +35,14 @@ main {
     margin: 0 auto;
 }
 
+.secondary-container-width {
+    width: 100%;
+    max-width: 952px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+    margin-top: 20px;
+}
+
 .main-buildings-name {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
