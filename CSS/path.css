@@ -17,6 +17,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    position: relative;
+    padding: 6px 0;
 }
 
 .active-path {
@@ -29,4 +31,19 @@
 
 #second-path {
     margin-bottom: 48px;
+}
+
+.path-main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e81a1a;
+    transition: width 0.3s;
+}
+
+.path-main:hover::after {
+    width: 100%;
 }
