@@ -5,8 +5,9 @@
 @import url('/CSS/therd-news/buildings-cards.css');
 @import url('/CSS/therd-news/botom-links.css');
 @import url('/CSS/therd-news/arrow-ups.css');
+@import url('/CSS/path.css');
 
-.path {
+/* .path {
     display: flex;
     margin-top: 20px;
     margin-bottom: 48px;
@@ -16,7 +17,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: rgba(51, 51, 51, 0.5);
-}
+} */
 
 .info-about-riding {
     display: flex;
