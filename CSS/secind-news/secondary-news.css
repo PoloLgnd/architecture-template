@@ -224,3 +224,234 @@
 .button-card:active {
     transform: translateY(1px);
 }
+
+@media (max-width: 1024px) {
+    #one {
+        background-size: auto;
+        width: 250px;
+        height: 400px;
+    }
+
+    #two {
+        background-size: auto;
+        width: 340px;
+        height: 490px;
+    }
+
+    #three {
+        background-size: auto;
+        width: 250px;
+        height: 400px;
+    }
+
+    #four {
+        background-size: auto;
+        width: 250px;
+        height: 362px;
+    }
+
+    #five {
+        background-size: auto;
+        width: 340px;
+        height: 324px;
+    }
+
+    #six {
+        background-size: auto;
+        width: 250px;
+        height: 362px;
+    }
+
+    #seven {
+        background-size: auto;
+        width: 250px;
+        height: 400px;
+    }
+
+    #eight {
+        background-size: auto;
+        width: 340px;
+        height: 490px;
+    }
+
+    #nine {
+        background-size: auto;
+        width: 250px;
+        height: 400px;
+    }
+
+    .content-container {
+        width: 860px;
+        gap: 20px;
+    }
+
+    .secind-news-container {
+        height: 1680px; /* Фиксированная высота для анимации */
+    }
+
+    .button-card {
+        left: -140px;
+         
+        height: 40px;
+        width: 140px;
+    }
+    .title {
+        font-size: 14px;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .main-title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #one {
+        background-size: auto;
+        width: 150px;
+        height: 280px;
+    }
+
+    #two {
+        background-size: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    #three {
+        background-size: auto;
+        width: 150px;
+        height: 280px;
+    }
+
+    #four {
+        background-size: auto;
+        width: 150px;
+        height: 362px;
+    }
+
+    #five {
+        background-size: auto;
+        width: 250px;
+        height: 324px;
+    }
+
+    #six {
+        background-size: auto;
+        width: 150px;
+        height: 362px;
+    }
+
+    #seven {
+        background-size: auto;
+        width: 150px;
+        height: 280px;
+    }
+
+    #eight {
+        background-size: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    #nine {
+        background-size: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    .content-container {
+        width: 860px;
+        gap: 20px;
+    }
+
+    .secind-news-container {
+        height: 1450px; /* Фиксированная высота для анимации */
+    }
+
+    .title {
+        font-size: 12px;
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .main-title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    #one {
+        background-size: auto;
+        width: 150px;
+        height: 280px;
+    }
+
+    #two {
+        background-size: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    #three {
+        background-size: auto;
+        width: 150px;
+        height: 280px;
+    }
+
+    #four {
+        background-size: auto;
+        width: 150px;
+        height: 362px;
+    }
+
+    #five {
+        background-size: auto;
+        width: 250px;
+        height: 324px;
+    }
+
+    #six {
+        background-size: auto;
+        width: 150px;
+        height: 362px;
+    }
+
+    #seven {
+        background-size: auto;
+        width: 150px;
+        height: 280px;
+    }
+
+    #eight {
+        background-size: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    #nine {
+        background-size: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    .content-container {
+        width: 325px;
+        gap: 20px;
+    }
+
+    .secind-news-container {
+        height: 1450px; /* Фиксированная высота для анимации */
+    }
+
+    .title {
+        font-size: 12px;
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .main-title {
+        font-size: 12px;
+    }
+}
