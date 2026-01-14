@@ -59,19 +59,19 @@
     width: 716px;
     height: 246px;
     pointer-events: none;
-    background-image: url('/img/main/modern-bildings/third-card.webp');
+    background-image: url('/static/img/main/modern-bildings/third-card.webp');
 }
 
 .modern-primary-card {
-    background-image: url('/img/main/modern-bildings/primary-card.webp');
+    background-image: url('/static/img/main/modern-bildings/primary-card.webp');
 }
 
 .modern-secondary-card:nth-child(1) {
-    background-image: url('/img/main/modern-bildings/secondary-card1.webp');
+    background-image: url('/static/img/main/modern-bildings/secondary-card1.webp');
 }
 
 .modern-secondary-card:nth-child(2) {
-    background-image: url('/img/main/modern-bildings/secondary-card2.webp');
+    background-image: url('/static/img/main/modern-bildings/secondary-card2.webp');
 }
 
 .modern-primary-container,

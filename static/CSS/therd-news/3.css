@@ -1,11 +1,11 @@
-@import url('/CSS/reset.css');
-@import url('/CSS/index.css');
-@import url('/CSS/therd-news/info-about-riding.css');
-@import url('/CSS/therd-news/text.css');
-@import url('/CSS/therd-news/buildings-cards.css');
-@import url('/CSS/therd-news/botom-links.css');
-@import url('/CSS/therd-news/arrow-ups.css');
-@import url('/CSS/path.css');
+@import url('/static/CSS/reset.css');
+@import url('/static/CSS/index.css');
+@import url('/static/CSS/therd-news/info-about-riding.css');
+@import url('/static/CSS/therd-news/text.css');
+@import url('/static/CSS/therd-news/buildings-cards.css');
+@import url('/static/CSS/therd-news/botom-links.css');
+@import url('/static/CSS/therd-news/arrow-ups.css');
+@import url('/static/CSS/path.css');
 
 /* .path {
     display: flex;

@@ -76,7 +76,7 @@
 
 
 #one {
-    background-image: url('/img/arch-news/1/dominion.webp');
+    background-image: url('/static/img/arch-news/1/dominion.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -85,7 +85,7 @@
 }
 
 #two {
-    background-image: url('/img/arch-news/1/scale.webp');
+    background-image: url('/static/img/arch-news/1/scale.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -94,7 +94,7 @@
 }
 
 #three {
-    background-image: url('/img/arch-news/1/sydnay.webp');
+    background-image: url('/static/img/arch-news/1/sydnay.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -103,7 +103,7 @@
 }
 
 #four {
-    background-image: url('/img/arch-news/2/kubs.webp');
+    background-image: url('/static/img/arch-news/2/kubs.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -112,7 +112,7 @@
 }
 
 #five {
-    background-image: url('/img/arch-news/2/flowers.webp');
+    background-image: url('/static/img/arch-news/2/flowers.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -121,7 +121,7 @@
 }
 
 #six {
-    background-image: url('/img/arch-news/2/circle.webp');
+    background-image: url('/static/img/arch-news/2/circle.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -130,7 +130,7 @@
 }
 
 #seven {
-    background-image: url('/img/arch-news/3/sin-city.webp');
+    background-image: url('/static/img/arch-news/3/sin-city.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -139,7 +139,7 @@
 }
 
 #eight {
-    background-image: url('/img/arch-news/3/stairs.webp');
+    background-image: url('/static/img/arch-news/3/stairs.webp');
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center; 
@@ -148,7 +148,7 @@
 }
 
 #nine {
-    background-image: url('/img/arch-news/3/bouns.webp');
+    background-image: url('/static/img/arch-news/3/bouns.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 

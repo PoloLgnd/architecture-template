@@ -8,7 +8,7 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
-    background-image: url('/img/main/news/buttom-news/Bitmap1.webp');
+    background-image: url('/static/img/main/news/buttom-news/Bitmap1.webp');
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 
 }

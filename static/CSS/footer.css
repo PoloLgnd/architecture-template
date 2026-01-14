@@ -52,7 +52,7 @@
 }
 
 .facebook {
-    background-image: url('/img/footer/Facebook.svg');
+    background-image: url('/static/img/footer/Facebook.svg');
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -60,7 +60,7 @@
 }
 
 .twitter {
-    background-image: url('/img/footer/Twitter.svg');
+    background-image: url('/static/img/footer/Twitter.svg');
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -68,7 +68,7 @@
 }
 
 .instagram {
-    background-image: url('/img/footer/Instagram.svg');
+    background-image: url('/static/img/footer/Instagram.svg');
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -76,7 +76,7 @@
 }
 
 .pinterest {
-    background-image: url('/img/footer/Pinterest.svg');
+    background-image: url('/static/img/footer/Pinterest.svg');
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -84,7 +84,7 @@
 }
 
 .google {
-    background-image: url('/img/footer/Google.svg');
+    background-image: url('/static/img/footer/Google.svg');
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -92,7 +92,7 @@
 }
 
 .spotify {
-    background-image: url('/img/footer/Spotify.svg');
+    background-image: url('/static/img/footer/Spotify.svg');
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -100,7 +100,7 @@
 }
 
 .telegram {
-    background-image: url('/img/footer/Tumblr.svg');
+    background-image: url('/static/img/footer/Tumblr.svg');
     width: 20px;
     height: 20px;
     background-size: 20px 20px;

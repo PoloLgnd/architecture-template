@@ -1,5 +1,5 @@
-@import url('/CSS/reset.css');
-@import url('/CSS/index.css');
+@import url('/static/CSS/reset.css');
+@import url('/static/CSS/index.css');
 @import url('news-top-scroller.css');
 @import url('modern-buildings.css');
 @import url('mailing.css');

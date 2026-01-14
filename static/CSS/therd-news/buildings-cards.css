@@ -51,19 +51,19 @@
     width: 612px;
     height: 266px;
     pointer-events: none;
-    background-image: url('/img/dominion-page/buildings-cards/third-card.webp');
+    background-image: url('/static/img/dominion-page/buildings-cards/third-card.webp');
 }
 
 .modern-primary-card {
-    background-image: url('/img/dominion-page/buildings-cards/first-card.webp');
+    background-image: url('/static/img/dominion-page/buildings-cards/first-card.webp');
 }
 
 .modern-secondary-card:nth-child(1) {
-    background-image: url('/img/dominion-page/buildings-cards/secondary-card1.webp');
+    background-image: url('/static/img/dominion-page/buildings-cards/secondary-card1.webp');
 }
 
 .modern-secondary-card:nth-child(2) {
-    background-image: url('/img/dominion-page/buildings-cards/secondary-card2.webp');
+    background-image: url('/static/img/dominion-page/buildings-cards/secondary-card2.webp');
 }
 
 .modern-primary-container,

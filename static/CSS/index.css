@@ -1,5 +1,5 @@
-@import url('/CSS/header.css');
-@import url('/CSS/footer.css');
+@import url('/static/CSS/header.css');
+@import url('/static/CSS/footer.css');
 
 body {
     overflow-x: hidden;

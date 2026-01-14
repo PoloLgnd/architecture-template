@@ -20,15 +20,15 @@
 }
 
 #popular-building-icon {
-  background-image: url('/img/dominion-page/bottom-links/first-bottom.webp');
+  background-image: url('/static/img/dominion-page/bottom-links/first-bottom.webp');
 }
 
 #most-curved-building-icon {
-  background-image: url('/img/dominion-page/bottom-links/second-bottom.webp');
+  background-image: url('/static/img/dominion-page/bottom-links/second-bottom.webp');
 }
 
 #glass-revolution-icon {
-  background-image: url('/img/dominion-page/bottom-links/third-bottom.webp');
+  background-image: url('/static/img/dominion-page/bottom-links/third-bottom.webp');
 }
 
 /* Текст в столбик */

@@ -33,15 +33,15 @@
 }
 
 #admin-icon {
-  background-image: url(/img/dominion-page/icons/admin.png);
+  background-image: url(/static/img/dominion-page/icons/admin.png);
 }
 
 #time-icon {
-  background-image: url(/img/dominion-page/icons/time.png);
+  background-image: url(/static/img/dominion-page/icons/time.png);
 }
 
 #date-icon {
-  background-image: url(/img/dominion-page/icons/date.png);
+  background-image: url(/static/img/dominion-page/icons/date.png);
 }
 
 /* Текст в столбик */
