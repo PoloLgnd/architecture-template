@@ -1,4 +1,4 @@
-.secind-news-container {
+/* .secind-news-container {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -25,4 +25,45 @@
     &.next {
         transform: translateX(100%);
     }
+} */
+
+.secind-news-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    min-height: 500px; /* вместо фиксированной высоты */
+}
+
+.news-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity .6s, transform .8s;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(0);
+}
+
+.news-page.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 3;
+    transform: translateX(0);
+    position: relative; /* меняем на relative для нормального потока */
+}
+
+.news-page.prev {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transform: translateX(-100%);
+}
+
+.news-page.next {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transform: translateX(100%);
 }
