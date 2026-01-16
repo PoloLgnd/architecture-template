@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -18,9 +18,20 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/test')
+def test():
+    return render_template("12.html")
+
+
 @app.route('/user/<string:name>/<int:id>')
 def user(name, id):
     return("user page" + " - " + name + " - " + str(id))
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('error404.html'), 404
+
 
 if __name__ == "__main__":
     app.run(debug = True)

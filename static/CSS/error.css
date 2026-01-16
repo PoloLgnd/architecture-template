@@ -1,8 +1,11 @@
 main {
     display: flex;
     justify-content: center;
+    align-items: center; /* Добавьте это для вертикального центрирования */
 }
 .error-container {
+    display: grid;
+    height: 500px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -12,6 +15,8 @@ main {
     max-width: 500px;
     width: 100%;
     justify-items: center;
+    align-content: center; /* Центрируем содержимое по вертикали внутри контейнера */
+    animation: fadeIn 0.8s ease-out; /* Перенесено сюда */
 }
 
 .error-code {
@@ -25,6 +30,7 @@ main {
     font-size: 28px;
     margin-bottom: 30px;
     font-weight: 300;
+    text-align: center;
 }
 
 .error-description {
@@ -32,6 +38,7 @@ main {
     margin-bottom: 30px;
     line-height: 1.6;
     opacity: 0.9;
+    text-align: center;
 }
 
 .home-button {
@@ -44,6 +51,7 @@ main {
     font-weight: bold;
     transition: all 0.3s ease;
     border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px; 
 }
 
 .home-button:hover {
@@ -54,7 +62,6 @@ main {
     border: 2px solid #e81a1a;
 }
 
-/* Анимация */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -66,12 +73,16 @@ main {
     }
 }
 
-.error-container {
-    animation: fadeIn 0.8s ease-out;
-}
-
-/* Адаптивность */
 @media (max-width: 480px) {
+        main {
+        padding: 20px;
+    }
+    
+    .error-container {
+        height: auto; 
+        min-height: 400px;
+        padding: 30px 20px;
+    }
     .error-code {
         font-size: 80px;
     }
@@ -79,8 +90,5 @@ main {
     .error-message {
         font-size: 24px;
     }
-    
-    .error-container {
-        padding: 30px 20px;
-    }
 }
+

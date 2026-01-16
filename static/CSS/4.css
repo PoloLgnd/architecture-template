@@ -1,11 +1,11 @@
-@import url('/CSS/reset.css');
-@import url('/CSS/index.css');
-@import url('news-top-scroller.css');
+@import url('/static/CSS/reset.css');
+@import url('/static/CSS/index.css');
+/* @import url('news-top-scroller.css');
 @import url('modern-buildings.css');
 @import url('mailing.css');
 @import url('old-buildings.css');
 @import url('news-buttom-scroller.css');
-@import url('up-button.css');
-@import url('/CSS/error.css');
+@import url('/static/CSS/main/up-button.css'); */
+@import url('/static/CSS/error.css');
 
 
