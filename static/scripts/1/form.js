@@ -16,7 +16,7 @@
 //         if (sendingStatus) FORM.classList.add('success');
     
 //         setTimeout(() => {
-//             if (FORM.classList.contains('succes'))FORM.classList.remove('succes');
+//             if (FORM.classList.contains('success'))FORM.classList.remove('success');
 //             if (FORM.classList.contains('error'))FORM.classList.remove('error');
 //             sendingStatus = false;
 //         }, 3000)
