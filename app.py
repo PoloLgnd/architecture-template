@@ -19,10 +19,12 @@ class Article(db.Model):
 @app.route('/')
 @app.route('/1.html')
 def home():
-    if request.methos =="POST":
-        userEmail = resuest.form('userEmail')
+    if request.method =="POST":
+        userEmail = request.form('userEmail')
 
         mails = Mail(userEmail=userEmail)
+
+
 
         try:
             db.session.add(article)
