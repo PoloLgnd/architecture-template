@@ -16,24 +16,30 @@ class Article(db.Model):
         return "<Article %r>" % self.id
 
 
-@app.route('/')
-@app.route('/1.html')
+
+
+@app.route('/', methods=['POST', 'GET'])
+@app.route('/1.html', methods=['POST', 'GET'])
 def home():
-    if request.method =="POST":
-        userEmail = request.form('userEmail')
-
-        mails = Mail(userEmail=userEmail)
-
-
-
+    if request.method == "POST":
+        if 'userEmail' not in request.form:
+            return "Поле email не найдено в запросе"
+        
+        userEmail = request.form['userEmail']
+        
+        if not userEmail:
+            return "Email не может быть пустым"
+        
+        mail_entry = Article(email=userEmail)
+        
         try:
-            db.session.add(article)
+            db.session.add(mail_entry)
             db.session.commit()
             return redirect('/')
-        except:
+        except Exception as e:
+            app.logger.error(f'Ошибка при добавлении почты: {e}')
             return "При добавлении почты возникла ошибка :("
-
-
+    
     return render_template("1.html")
 
 
