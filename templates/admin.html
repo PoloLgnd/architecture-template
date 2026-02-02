@@ -15,7 +15,7 @@
         <header class="header">
             <div class="header-top">
                 <a href="index.html" class="logo-link">
-                    <img src="/static/img/header/Vector.svg" alt="АРХИТЕКТУРНЫЙ БЛОГ" class="logo">
+                    <img src="/static/img/admin/adminLogo.svg" alt="АРХИТЕКТУРНЫЙ БЛОГ" class="logo">
                 </a>
             </div>
             <nav class="main-nav">
@@ -29,47 +29,39 @@
         </header>
         <main>
             
-            {% block body %} {% endblock %}
+            <div class="complited-emails container-width">
+                <div class="main-buildings-name admin-titles">Собранные почты</div>
 
-             <table>
-                <!-- Заголовок таблицы -->
-                <thead>
-                    <tr>
-                        <th>Заголовок 1</th> <!-- Table Header - заголовок столбца -->
-                        <th>Заголовок 2</th>
-                        <th>Заголовок 3</th>
-                    </tr>
-                </thead>
-                
-                <!-- Тело таблицы -->
-                <tbody>
-                    <tr>
-                        <td>Данные 1</td>
-                        <td>Данные 2</td>
-                        <td>Данные 3</td>
-                    </tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Email</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Details</th>
+                                
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <td>Данные 1</td>
-                        <td>Данные 2</td>
-                        <td>Данные 3</td>
-                    </tr>
-                </tbody>
-                
-                <!-- Подвал таблицы (опционально) -->
-                <tfoot>
-                    <tr>
-                        <td>Итого:</td>
-                        <td>100</td>
-                        <td>200</td>
-                    </tr>
-                </tfoot>
-            </table>
+                    <tbody>
+                    {% for el in articles %} 
+                        <tr>
+                            <td class="id">{{ el.id }}</td>
+                            <td class="email">{{ el.email }}</td>
+                            <td class="date.date">{{ el.date }}</td>
+                            <td class="status">Статус</td>
+                            <td class="details">
+                                <a href="/admin/{{ el.id }}" class="details-button">Детали</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
 
 
-
-
-
+           
         </main>
         <footer class="footer">
             <div class="footer-container">

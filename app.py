@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mail.db' #здесь подключаем бд
-app.config['SQLALCHEMY_TRCK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class Article(db.Model):
@@ -58,6 +58,18 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/admin')
+def admin():
+    articles = Article.query.order_by(Article.date).all()
+    return render_template("admin.html", articles = articles)
+
+
+@app.route('/admin/<int:id>')
+def admin_detail(id):
+    article = Article.query.get(id)
+    return render_template("admin-detail.html", article = article)
+
+
 @app.route('/test')
 def test():
     return render_template("12.html")
@@ -69,6 +81,10 @@ def page_not_found(error):
 
 
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
+
+
     app.run(debug = True)
 
 # 13 минута - шаблоны для сайтов 
