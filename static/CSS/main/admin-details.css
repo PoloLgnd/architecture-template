@@ -1,0 +1,34 @@
+.status-panel {
+
+}
+
+.btn-rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+
+.btn {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    pointer-events: all;
+    border: 2px;
+    border-color: black;
+    justify-content: center;
+}
+
+.upplay {
+
+}
+
+.exist {
+
+}
+

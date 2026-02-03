@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Archirecture</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='CSS/main/1.css')}}">
+        <link rel="icon" href="{{ url_for('static', filename='img/main-icons/32x32/Vector.svg') }}" type="image/svg+xml">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -32,32 +33,11 @@
             <div class="complited-emails container-width">
                 <div class="main-buildings-name admin-titles">{{ article.email }}</div>
                 
+                <div class="btn-rows">
+                    <div class="btn upplay">Готово</div>
+                    <div class="btn exist">Не готово</div>
+                </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Email</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Details</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                    {% for el in articles %}
-                        <tr class="info admin-titles">
-                            <td class="id">{{ el.id }}</td>
-                            <td  class="email">{{ el.email }}</td>
-                            <td class="date.date">{{ el.date }}</td>
-                            <td class="status">Статус</td>
-                            <td class="details">
-                                <a href="/admin/{{ el.id }}" class="details-button">Детали</a>
-                            </td>
-                        </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
             </div>
 
         </main>

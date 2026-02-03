@@ -59,6 +59,7 @@ def index():
 
 
 @app.route('/admin')
+@app.route('/admin/')
 def admin():
     articles = Article.query.order_by(Article.date).all()
     return render_template("admin.html", articles = articles)

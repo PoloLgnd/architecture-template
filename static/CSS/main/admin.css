@@ -1,3 +1,5 @@
+@import url('/static/CSS/main/admin-details.css');
+
 .admin-titles {
     margin-top: 50px;
 }
@@ -40,132 +42,132 @@
 }
 
 /* Основные стили таблицы */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-    }
-    
-    /* Заголовки таблицы */
-    table thead {
-        background-color: #f8f9fa;
-        border-bottom: 2px solid #dee2e6;
-    }
-    
-    table th {
-        padding: 12px 8px;
-        text-align: center;
-        font-weight: 600;
-        color: #495057;
-        border-right: 1px solid #dee2e6;
-    }
-    
-    table th:last-child {
-        border-right: none;
-    }
-    
-    /* Строки таблицы */
-    table tbody tr {
-        border-bottom: 1px solid #e9ecef;
-        transition: background-color 0.2s;
-    }
-    
-    table tbody tr:hover {
-        background-color: #f8f9fa;
-    }
-    
-    table td {
-        padding: 10px 8px;
-        vertical-align: middle;
-        border-right: 1px solid #e9ecef;
-    }
-    
-    table td:last-child {
-        border-right: none;
-    }
-    
-    /* Стили для ID - центрирование */
-    .id {
-        font-weight: bold;
-        color: #495057;
-    }
-    
-    /* Стили для Email - выравнивание по левому краю */
-    .email {
-        word-break: break-all;
-        color: #212529;
-    }
-    
-    /* Стили для даты */
-    .date {
-        font-family: 'Courier New', monospace;
-        font-size: 13px;
-        color: #6c757d;
-    }
-    
-    /* Стили для статуса */
-    .status-badge {
-        display: inline-block;
-        padding: 4px 12px;
-        border-radius: 12px;
-        font-size: 12px;
-        font-weight: 600;
-        background-color: #d1fae5;
-        color: #065f46;
-    }
-    
-    /* Стили для кнопки деталей */
-    .details-button {
-        display: inline-block;
-        padding: 6px 16px;
-        background-color: #3b82f6;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        font-size: 13px;
-        font-weight: 500;
-        transition: background-color 0.2s;
-    }
-    
-    .details-button:hover {
-        background-color: #2563eb;
-        text-decoration: none;
-    }
-    
-    /* Пустая таблица */
-    table tbody:empty::after {
-        content: "Нет данных для отображения";
-        display: block;
-        text-align: center;
-        padding: 40px;
-        color: #6c757d;
-        font-style: italic;
-    }
-    
-    /* Фиксированные ширины столбцов */
-    table th:nth-child(1),
-    table td:nth-child(1) {
-        width: 50px; /* ID */
-    }
-    
-    table th:nth-child(2),
-    table td:nth-child(2) {
-        min-width: 200px; /* Email */
-    }
-    
-    table th:nth-child(3),
-    table td:nth-child(3) {
-        width: 150px; /* Date */
-    }
-    
-    table th:nth-child(4),
-    table td:nth-child(4) {
-        width: 100px; /* Status */
-    }
-    
-    table th:nth-child(5),
-    table td:nth-child(5) {
-        width: 100px; /* Details */
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Заголовки таблицы */
+table thead {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+table th {
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: 600;
+    color: #495057;
+    border-right: 1px solid #dee2e6;
+}
+
+table th:last-child {
+    border-right: none;
+}
+
+/* Строки таблицы */
+table tbody tr {
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s;
+}
+
+table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+table td {
+    padding: 10px 8px;
+    vertical-align: middle;
+    border-right: 1px solid #e9ecef;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+/* Стили для ID - центрирование */
+.id {
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Стили для Email - выравнивание по левому краю */
+.email {
+    word-break: break-all;
+    color: #212529;
+}
+
+/* Стили для даты */
+.date {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+/* Стили для статуса */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+/* Стили для кнопки деталей */
+.details-button {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.details-button:hover {
+    background-color: #2563eb;
+    text-decoration: none;
+}
+
+/* Пустая таблица */
+table tbody:empty::after {
+    content: "Нет данных для отображения";
+    display: block;
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Фиксированные ширины столбцов */
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 50px; /* ID */
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    min-width: 200px; /* Email */
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 150px; /* Date */
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+    width: 100px; /* Status */
+}
+
+table th:nth-child(5),
+table td:nth-child(5) {
+    width: 100px; /* Details */
+}
