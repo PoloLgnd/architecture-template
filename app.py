@@ -12,7 +12,7 @@ class Article(db.Model):
     email = db.Column(db.String(100), nullable=False)
     date = db.Column(db.DateTime, default = datetime.utcnow)
 
-    
+
 
     def __repr__(self):
         return "<Article %r>" % self.id
@@ -71,6 +71,18 @@ def admin():
 def admin_detail(id):
     article = Article.query.get(id)
     return render_template("admin-detail.html", article = article)
+
+
+@app.route('/admin/<int:id>/del')
+def admin_detail_delete(id):
+    article = Article.query.get_or_404(id)
+
+    try:
+        db.session.delete(article)
+        db.session.commit()
+        return redirect('/admin')
+    except:
+        return("При удалении произошла ошибка(")
 
 
 @app.route('/test')
