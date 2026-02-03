@@ -12,6 +12,8 @@ class Article(db.Model):
     email = db.Column(db.String(100), nullable=False)
     date = db.Column(db.DateTime, default = datetime.utcnow)
 
+    
+
     def __repr__(self):
         return "<Article %r>" % self.id
 

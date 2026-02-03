@@ -2,33 +2,78 @@
 
 }
 
+.complited-emails-info {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
 .btn-rows {
     display: flex;
+    width: 500px;
+    height: 100px;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     margin: 20px 0;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
 }
 
 
-.btn {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    pointer-events: all;
-    border: 2px;
-    border-color: black;
-    justify-content: center;
+.news-button {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    outline: none;
+}
+
+.news-button:hover {
+    transform: translateY(-2px);
+}
+
+.news-button:active {
+    transform: translateY(0);
 }
 
 .upplay {
+    background-color: rgb(30, 255, 18)
+}
 
+.upplay::after {
+    background-color: rgb(25, 217, 15)
+}
+
+.upplay:hover {
+    background: rgb(26, 224, 16);
 }
 
 .exist {
-
+    background-color: rgb(255, 50, 50);
 }
 
+.exist::after {
+    background-color: rgb(141, 26, 26);
+}
+
+.exist:hover {
+    background: rgb(181, 34, 34);
+}
