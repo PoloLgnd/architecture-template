@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Archirecture</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='CSS/main/1.css')}}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='CSS/error.css')}}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -16,7 +15,7 @@
         <header class="header">
             <div class="header-top">
                 <a href="index.html" class="logo-link">
-                    <img src="/static/img/admin/adminLogo.svg" alt="АРХИТЕКТУРНЫЙ БЛОГ" class="logo">
+                    <img src="/static/img/header/Vector.svg" alt="АРХИТЕКТУРНЫЙ БЛОГ" class="logo">
                 </a>
             </div>
             <nav class="main-nav">
@@ -30,27 +29,30 @@
         </header>
         <main>
             
+
             <div class="complited-emails container-width">
-                <div class="main-buildings-name admin-titles">Новые почты ({{ articles|length }})</div>
-                {% if articles %}
+                <div class="main-buildings-name admin-titles">Готовые почты ({{ articles|length }})</div>
+                {% if processed_emails %}
                 <table>
                     <thead>
                         <tr>
                             <th>Id</th>
                             <th>Email</th>
-                            <th>Date</th>
-                            <th>Details</th>
+                            <th>Original Id</th>
+                            <th>Дата добавления в "Готово"</th>
+                            <th>Удалить окончательно</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                    {% for el in articles %} 
+                    {% for el in processed_emails %} 
                         <tr>
                             <td class="id">{{ el.id }}</td>
                             <td class="email">{{ el.email }}</td>
-                            <td class="date.date">{{ el.date.strftime('%Y-%m-%d %H:%M') }}</td>
+                            <td class="original-id">{{ el.original_id }}</td>
+                            <td class="date.date">{{ el.processed_date.strftime('%Y-%m-%d %H:%M') }}</td>
                             <td class="details">
-                                <a href="/admin/{{ el.id }}/del" class="details-button">Удалить</a>
+                                <a href="/admin/ready/{{ el.id }}/del" class="details-button">Удалить</a>
                             </td>
                         </tr>
                     {% endfor %}
@@ -60,16 +62,13 @@
                 <div class="email-error-container">
                     <div class="error-container">
                         <div class="error-message">Новых почт нету :(</div>
-                        <!-- <div class="error-description">
-                            Страница, которую вы ищете, не существует или была перемещена.
-                        </div> -->
                         <a href="1.html" class="home-button">Вернуться на главную</a>
                     </div>
                 </div>
                 {% endif %}
             </div>
 
-  
+
         </main>
         <footer class="footer">
             <div class="footer-container">

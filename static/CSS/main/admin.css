@@ -136,6 +136,23 @@ table td:last-child {
     text-decoration: none;
 }
 
+.details-button-ready {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #38cf32;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.details-button-ready:hover {
+    background-color: #289724;
+    text-decoration: none;
+}
+
 /* Пустая таблица */
 table tbody:empty::after {
     content: "Нет данных для отображения";
